@@ -1,0 +1,92 @@
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="billing.css">
+    <title>Hotel</title>
+ </head>
+<body>   
+	<div class="container w-50">
+		<div class="row">
+		<div class="col mt-5 ml-5">
+			<button>Adminstration</button>
+		</div> 
+		</div>
+		<div class="row ">
+			<div class="col " id="logo">
+				<img src="logo.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p>Hotel Raja (non-veg & veg)<br>
+				   Kachari Road - opp to bus stand<br>
+				   Kallakurichi-606 213<br>
+				   Villupuram-Districk<br>
+					Ph:044-227866</p>
+			</div>
+		</div> 
+		<div class="row">
+			<div class="col">
+				<p id="date"></p>
+			</div>
+		</div> 
+		<div class="row pt-2" >
+			<div class="col col-lg-10">
+				<select class="form-control w-100" id="foodItem">
+				</select>
+			</div>
+		</div>
+		<div class="row pt-2" >
+			<div class="col col-lg-10">
+				<input class="form-control w-100" id="foodPrice">
+			</div>
+		</div>
+		<div class="row pt-2" >
+			<div class="col" id="fq">
+				<input id="foodQuatity" type="text" placeholder="Quantity">
+				<button id="addbtn">Add</button>				
+			</div>
+		</div>
+		<div class="row pt-3">
+			<div class="col">
+				<table class="table" id="tablelist">
+  					<thead>
+    					<tr>
+     			 			<th class="text-center">S.No</th>
+      						<th class="text-center">Food Item</th>
+      						<th class="text-center">Price</th>
+      						<th class="text-center">Quantity</th>
+      						<th class="text-center">Rate</th>
+    					</tr>
+  					</thead>
+  					<tbody id="selection">
+    					<tr>
+      						<th></th>
+      						<td></td>
+      						<td></td>
+      						<td>TOTAL:</td>
+      						<td></td>
+    					</tr>
+  					</tbody>
+				</table>
+			</div>
+		</div>
+		<footer>
+			<p>Thank you for Coming and Visit Again <br>
+				 Don't Waste the Food And Water</p>
+
+		</footer>
+		<div class="row">
+			<div class="col" id="print">
+				 <button type="submit">Print</button>
+			</div>
+		</div> 
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="billingjq.js"></script>
+	<script type="text/javascript" src="billingjs.js"></script>
+
+</body>
+</html>
