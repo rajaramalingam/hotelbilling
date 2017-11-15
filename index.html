@@ -45,7 +45,7 @@
 		</div>
 		<div class="row pt-2" >
 			<div class="col" id="fq">
-				<input id="foodQuatity" type="text" placeholder="Quantity">
+				<input id="foodQuantity" type="text" placeholder="Quantity">
 				<button id="addbtn">Add</button>				
 			</div>
 		</div>
@@ -54,21 +54,22 @@
 				<table class="table" id="tablelist">
   					<thead>
     					<tr>
-     			 			<th class="text-center">S.No</th>
+     			 			<!-- <th class="text-center">S.No</th> -->
       						<th class="text-center">Food Item</th>
       						<th class="text-center">Price</th>
       						<th class="text-center">Quantity</th>
       						<th class="text-center">Rate</th>
     					</tr>
   					</thead>
+  					 <tfoot>
+    						<tr>
+    						<td></td>
+    						<td></td>
+    						<td></td>
+      						<td>Total=<span id="gtotal"></span></td>
+      						</tr>
+  					</tfoot>
   					<tbody id="selection">
-    					<tr>
-      						<th></th>
-      						<td></td>
-      						<td></td>
-      						<td>TOTAL:</td>
-      						<td></td>
-    					</tr>
   					</tbody>
 				</table>
 			</div>
